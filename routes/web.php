@@ -29,7 +29,8 @@ Route::get('contact.html',[
 
 
 //Admin Routes
-Route::get('admin',[
-    'as' => 'admin.home.index',
-    'uses' => 'adminHomeController@index'
-]);
+Route::prefix('admin')->group(function (){
+    Route::get('/login','Auth\adminLoginController@showloginForm')->name('admin.login');
+    Route::post('/login','Auth\adminLoginController@login')->name('admin.login.submit');
+    Route::get('/','adminHomeController@index')->name('admin.home.index');
+});

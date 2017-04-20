@@ -3443,5 +3443,53 @@
             "testing",
             "xunit"
         ]
+    },
+    {
+        "name": "hootlex/laravel-moderation",
+        "version": "v1.0.10",
+        "version_normalized": "1.0.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/hootlex/laravel-moderation.git",
+            "reference": "bac5310cf359a47780eba5c8e5bcc81320e337ab"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/hootlex/laravel-moderation/zipball/bac5310cf359a47780eba5c8e5bcc81320e337ab",
+            "reference": "bac5310cf359a47780eba5c8e5bcc81320e337ab",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "laravel/laravel": "5.*",
+            "phpunit/phpunit": "5.*"
+        },
+        "time": "2017-02-12T02:40:36+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Hootlex\\Moderation\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alex Kyriakidis",
+                "email": "hootlex@icloud.com"
+            }
+        ],
+        "description": "A simple Content Moderation System for Laravel 5.* that allows you to Approve or Reject resources like posts, comments, users, etc.",
+        "keywords": [
+            "content-moderation",
+            "laravel",
+            "moderation",
+            "moderation-system"
+        ]
     }
 ]

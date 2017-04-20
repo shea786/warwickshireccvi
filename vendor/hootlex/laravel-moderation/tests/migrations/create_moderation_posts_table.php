@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Schema;
 
-class CreateUsersTable extends Migration
+class CreateModerationPostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,10 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('username')->nullable()->unique();
-            $table->string('password');
-            $table->rememberToken();
             $table->smallInteger('status')->default(0);
-            $table->dateTime('moderated_at')->nullable();
+            $table->dateTime('moderated_at');
             $table->integer('moderated_by')->nullable()->unsigned();
             $table->timestamps();
         });
@@ -34,6 +29,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::drop('posts');
     }
 }

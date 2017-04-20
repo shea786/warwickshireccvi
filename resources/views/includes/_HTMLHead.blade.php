@@ -8,10 +8,10 @@
         <title>@yield('HTMLTitle') | WCCVI</title>
 
         <!-- favicon -->
-        <link rel="icon" href="images/favicon.png">
+        <link rel="icon" href="/images/favicon.png">
 
         <!-- style -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>

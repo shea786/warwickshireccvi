@@ -6,10 +6,12 @@ use Illuminate\Notifications\Notifiable;
 use Hootlex\Moderation\Moderatable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class Admin extends Authenticatable
 {
     use Moderatable;
     use Notifiable;
+    
+    protected $guard = "admin";
 
     /**
      * The attributes that are mass assignable.
