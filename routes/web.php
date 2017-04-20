@@ -11,10 +11,25 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/',[
+    'as' => 'default.index',
+    'uses' => 'homeController@index'
+]);
+Route::get('index.html',[
+    'as' => 'home.index',
+    'uses' => 'homeController@index'
+]);
+
+Route::get('contact.html',[
+    'as' => 'contact.index',
+    'uses' => 'contactController@index'
+]);
+
+
+//Admin Routes
+Route::get('admin',[
+    'as' => 'admin.home.index',
+    'uses' => 'adminHomeController@index'
+]);
