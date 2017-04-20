@@ -5,6 +5,7 @@ Contact-Us
 @endsection
 
 @section('contents')
+<br><br>This is contact page
             <!-- START PAGE TITILE SECTION -->
             <div class="page-title-section contact-page-title">
                 <div class="container">
