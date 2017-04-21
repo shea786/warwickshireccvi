@@ -56,7 +56,7 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo" alt=""></a>
+                            <a class="navbar-brand" href="{{ route('default.index') }}"><img src="/images/logo.png" class="logo" alt=""></a>
                         </div>
                         <!-- End Header Navigation -->
 
@@ -230,7 +230,7 @@
                         <div class="col-md-4">
                             <div class="footer-logo">
                                 <a href="#">
-                                    <img src="images/logo.png" class="img-responsive" width="262" height="76" alt="">
+                                    <img src="/images/logo.png" class="img-responsive" width="262" height="76" alt="">
                                 </a>
                             </div><!-- end of /. footer logo -->
                         </div><!-- end of /.col -->

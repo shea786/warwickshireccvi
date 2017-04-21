@@ -17,7 +17,7 @@ Route::get('/',[
     'as' => 'default.index',
     'uses' => 'homeController@index'
 ]);
-Route::get('index.html',[
+Route::get('/home',[
     'as' => 'home.index',
     'uses' => 'homeController@index'
 ]);
@@ -27,6 +27,10 @@ Route::get('contact.html',[
     'uses' => 'contactController@index'
 ]);
 
+//Profile Routes
+Route::prefix('profile')->group(function (){
+    Route::get('/{username}','profileController@single')->name('profile.single');
+});
 
 //Admin Routes
 Route::prefix('admin')->group(function (){
