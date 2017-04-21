@@ -33,10 +33,10 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="profile-images-match">
-                                <a href="#"><img class="img-responsive" src="images/player.jpg" width="370" height="370" alt=""></a>
+                                <a href="#"><img class="img-responsive" src="/images/player.jpg" width="370" height="370" alt=""></a>
                                 <div class="profile-details">
                                     <div class="profile-pic profile-details-inner">
-                                        <a href="#"><img class="img-responsive" src="images/fixture-team2.png" width="64" height="84" alt=""></a>
+                                        <a href="#"><img class="img-responsive" src="/images/fixture-team2.png" width="64" height="84" alt=""></a>
                                     </div>
                                     <div class="carryer-match profile-details-inner">
                                         <h2>24</h2>
