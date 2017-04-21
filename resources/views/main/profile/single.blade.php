@@ -47,7 +47,7 @@
                         </div>
                         <div class="col-sm-8">
                             <div class="player-carryer-total-des">
-                                <h1 id="profile-title">Garry <b>Oldman <span>#21</span></b></h1>
+                                <h1 id="profile-title">{{ $user->firstname }} <b>{{ $user->lastname }} <span>#21</span></b></h1>
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="player-description">
