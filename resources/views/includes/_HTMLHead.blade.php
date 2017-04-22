@@ -19,6 +19,7 @@
             <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
         <![endif]-->
         <!-- Scripts -->
+        @yield('HTMLHeadScripts')
         <script>
             window.Laravel = {!! json_encode([
                 'csrfToken' => csrf_token(),

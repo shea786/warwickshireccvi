@@ -29,7 +29,13 @@ Route::get('contact.html',[
 
 //Profile Routes
 Route::prefix('profile')->group(function (){
+    //Create Profile Section
+    Route::get('/create','myProfileController@create')->name('myProfile.create');
+    Route::post('/create','myProfileController@store')->name('myProfile.store');
+    //My Profile
     Route::get('/{username}','profileController@single')->name('profile.single');
+    //my Profile Section
+    Route::get('/','myProfileController@showMyProfileSection')->name('myProfile.showMyProfileSection');
 });
 
 //Admin Routes

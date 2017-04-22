@@ -15,6 +15,7 @@ class ComposerStaticInit1d9d3cd68b76cd31ccf4ff518c1d0c95
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
+        'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -91,6 +92,7 @@ class ComposerStaticInit1d9d3cd68b76cd31ccf4ff518c1d0c95
         'C' => 
         array (
             'Cron\\' => 5,
+            'Collective\\Html\\' => 16,
             'Carbon\\' => 7,
         ),
         'A' => 
@@ -230,6 +232,10 @@ class ComposerStaticInit1d9d3cd68b76cd31ccf4ff518c1d0c95
         array (
             0 => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron',
         ),
+        'Collective\\Html\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravelcollective/html/src',
+        ),
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
@@ -282,6 +288,7 @@ class ComposerStaticInit1d9d3cd68b76cd31ccf4ff518c1d0c95
     public static $classMap = array (
         'CreateAdminsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_20_172015_create_admins_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+        'CreateProfilesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_22_201923_create_profiles_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
