@@ -7,9 +7,14 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'CreateAdminsTable' => $baseDir . '/database/migrations/2017_04_20_172015_create_admins_table.php',
+    'CreateMatchTypesTable' => $baseDir . '/database/migrations/2017_04_23_000132_create_match_types_table.php',
+    'CreateMatchesTable' => $baseDir . '/database/migrations/2017_04_23_002315_create_matches_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateProfilesTable' => $baseDir . '/database/migrations/2017_04_22_201923_create_profiles_table.php',
+    'CreateSeasonsTable' => $baseDir . '/database/migrations/2017_04_23_001033_create_seasons_table.php',
+    'CreateTeamsTable' => $baseDir . '/database/migrations/2017_04_23_000530_create_teams_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
+    'CreateVenuesTable' => $baseDir . '/database/migrations/2017_04_23_000757_create_venues_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',

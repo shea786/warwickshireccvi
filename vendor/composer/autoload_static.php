@@ -287,9 +287,14 @@ class ComposerStaticInit1d9d3cd68b76cd31ccf4ff518c1d0c95
 
     public static $classMap = array (
         'CreateAdminsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_20_172015_create_admins_table.php',
+        'CreateMatchTypesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_23_000132_create_match_types_table.php',
+        'CreateMatchesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_23_002315_create_matches_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateProfilesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_22_201923_create_profiles_table.php',
+        'CreateSeasonsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_23_001033_create_seasons_table.php',
+        'CreateTeamsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_23_000530_create_teams_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
+        'CreateVenuesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_23_000757_create_venues_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',

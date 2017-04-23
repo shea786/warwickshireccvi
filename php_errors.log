@@ -2,3 +2,4 @@
 [19-Apr-2017 13:05:34 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/20151012/apcu.so' - /usr/lib/php/20151012/apcu.so: cannot open shared object file: No such file or directory in Unknown on line 0
 [19-Apr-2017 13:05:38 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/20151012/apcu.so' - /usr/lib/php/20151012/apcu.so: cannot open shared object file: No such file or directory in Unknown on line 0
 [19-Apr-2017 13:05:40 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php/20151012/apcu.so' - /usr/lib/php/20151012/apcu.so: cannot open shared object file: No such file or directory in Unknown on line 0
+[22-Apr-2017 23:15:35 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Admin\Controller' not found in /home/ubuntu/workspace/app/Http/Controllers/Admin/adminHomeController.php on line 7

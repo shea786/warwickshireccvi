@@ -38,9 +38,29 @@ Route::prefix('profile')->group(function (){
     Route::get('/','myProfileController@showMyProfileSection')->name('myProfile.showMyProfileSection');
 });
 
+//Fixtures Routes
+Route::prefix('fixtures')->group(function (){
+    //Main Fixtures Route
+    Route::get('/','fixturesController@index')->name('fixtures.index');
+});
+
 //Admin Routes
 Route::prefix('admin')->group(function (){
     Route::get('/login','Auth\adminLoginController@showloginForm')->name('admin.login');
     Route::post('/login','Auth\adminLoginController@login')->name('admin.login.submit');
-    Route::get('/','adminHomeController@index')->name('admin.home.index');
+    
+    //Match Routes
+    Route::prefix('match')->group(function (){
+        Route::get('/create','Admin\adminMatchController@create')->name('admin.match.create');
+        Route::get('/','Admin\adminMatchController@index')->name('admin.match.index');
+    });
+    
+    //Team Routes
+    Route::prefix('teams')->group(function (){
+        Route::get('/create','Admin\adminTeamsController@create')->name('admin.teams.create');
+        Route::post('/create','Admin\adminTeamsController@store')->name('admin.teams.store');
+        Route::get('/','Admin\adminTeamsController@index')->name('admin.teams.index');
+    });
+    
+    Route::get('/','Admin\adminHomeController@index')->name('admin.home.index');
 });
