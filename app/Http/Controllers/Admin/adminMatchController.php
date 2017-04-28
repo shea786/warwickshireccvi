@@ -5,16 +5,38 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 //Models
+use App\Match;
 use App\Team;
+use App\Venue;
 
 class adminMatchController extends Controller
 {
     public function index(){
-        return view('admin.match.index');
+        $matches = Match::orderBy('start_date_and_time','asc')->get();
+        return view('admin.match.index')->withMatches($matches);
     }
     
     public function create(){
         $teams = Team::pluck('name', 'id');
-        return view('admin.match.create')->withTeams($teams);
+        $venues = Venue::pluck('club_name', 'id');
+        return view('admin.match.create')->withTeams($teams)->withVenues($venues);
+    }
+    
+    public function store(Request $request){
+        //validation
+        
+        //store into database
+        $match = new Match;
+        $match->match_type = 1;
+        $match->season_id = 1;
+        $match->home_team = $request->hometeam;
+        $match->away_team = $request->awayteam;
+        $match->venue_id = $request->venue;
+        $match->start_date_and_time = $request->start_date_and_time;
+        $match->save();
+        //notifications
+        
+        //redirect
+        return redirect()->route('admin.match.index');
     }
 }

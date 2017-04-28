@@ -3,7 +3,7 @@
 @section('contents')
     <div class="row">
         <div class="col-md-12">
-            {!! Form::open() !!}
+            {!! Form::open(['route' => 'admin.match.store']) !!}
                 {!! Form::label('matchType','Match Type:') !!}
                 {!! Form::text('matchType',null,['class' => 'form-control']) !!}
                 
@@ -13,8 +13,8 @@
                 {!! Form::label('awayteam','Away Team:') !!}
                 {!! Form::select('awayteam', $teams, null, ['class' => 'form-control']) !!}
                 
-                {!! Form::label('venue', 'Venue:') !!}
-                {!! Form::text('venue',null,['class' => 'form-control']) !!}
+                {!! Form::label('venue','Venue:') !!}
+                {!! Form::select('venue', $venues, null, ['class' => 'form-control']) !!}
                 
                 {!! Form::label('start_date_and_time','Match Start & Time:') !!}
                 <input type="datetime-local" name="start_date_and_time" class="form-control">

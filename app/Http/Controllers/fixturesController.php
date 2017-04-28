@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class fixturesController extends Controller
 {
     public function index(){
-        echo "Show fixtures page";
+        return view('main.fixtures.index');
     }
 }

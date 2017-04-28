@@ -1,5 +1,5 @@
 @extends('layouts.admin')
 
 @section('contents')
-    afdafadfasfsafdasf
+    Username: {{ \Auth::user()->username }}
 @endsection

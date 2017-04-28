@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 
 //Models
 use App\Team;
+use App\Venue;
 
 class adminTeamsController extends Controller
 {
@@ -16,7 +17,8 @@ class adminTeamsController extends Controller
     }
     
     public function create(){
-        return view('admin.teams.create');
+        $venues = Venue::pluck('club_name', 'id');
+        return view('admin.teams.create')->withVenues($venues);
     }
     
     public function store(Request $request){

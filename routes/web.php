@@ -52,6 +52,7 @@ Route::prefix('admin')->group(function (){
     //Match Routes
     Route::prefix('match')->group(function (){
         Route::get('/create','Admin\adminMatchController@create')->name('admin.match.create');
+        Route::post('/create','Admin\adminMatchController@store')->name('admin.match.store');
         Route::get('/','Admin\adminMatchController@index')->name('admin.match.index');
     });
     
@@ -60,6 +61,21 @@ Route::prefix('admin')->group(function (){
         Route::get('/create','Admin\adminTeamsController@create')->name('admin.teams.create');
         Route::post('/create','Admin\adminTeamsController@store')->name('admin.teams.store');
         Route::get('/','Admin\adminTeamsController@index')->name('admin.teams.index');
+    });
+    
+    //Venue routes
+    Route::prefix('venue')->group(function(){
+        Route::get('/create','Admin\adminVenueController@create')->name('admin.venue.create');
+        Route::post('/create','Admin\adminVenueController@store')->name('admin.venue.store');
+        Route::get('/','Admin\adminVenueController@index')->name('admin.venue.index');
+    });
+    
+    //Venue routes
+    Route::prefix('match-type')->group(function(){
+        Route::get('/create','Admin\adminMatchTypeController@create')->name('admin.matchType.create');
+        Route::post('/create','Admin\adminMatchTypeController@store')->name('admin.matchType.store');
+        Route::get('/','Admin\adminMatchTypeController@index')->name('admin.matchType.index');
+        Route::get('/{matchTypeID}','Admin\adminMatchTypeController@single')->name('admin.matchType.single');
     });
     
     Route::get('/','Admin\adminHomeController@index')->name('admin.home.index');

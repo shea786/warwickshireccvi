@@ -7,8 +7,8 @@
                 {!! Form::label('name','Team Name:') !!}
                 {!! Form::text('name',null,['class' => 'form-control']) !!}
                 
-                {!! Form::label('venue', 'Venue:') !!}
-                {!! Form::text('venue',null,['class' => 'form-control']) !!}
+                {!! Form::label('venue','Venue:') !!}
+                {!! Form::select('venue', $venues, null, ['class' => 'form-control']) !!}
                 
                 {!! Form::label('description','Description:') !!}
                 {!! Form::textarea('description',null,['class' => 'form-control']) !!}
