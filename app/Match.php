@@ -23,6 +23,6 @@ class Match extends Model
     
     public function matchType()
     {
-        return $this->belongsTo('App\MatchType','id','match_type');
+        return $this->belongsTo('App\MatchType','match_type','id');
     }
 }

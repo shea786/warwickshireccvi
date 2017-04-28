@@ -18,12 +18,12 @@ class CreateVenuesTable extends Migration
             $table->string('club_name');
             $table->string('thumbnail');
             $table->string('address_1');
-            $table->string('address_2');
+            $table->string('address_2')->nullable();
             $table->string('city_town');
-            $table->string('County');
+            $table->string('County')->nullable();
             $table->string('Country');
             $table->string('post_code');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }

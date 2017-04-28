@@ -11,8 +11,7 @@ Home
                     <div class="row">
                         <div class="col-md-8">
                             <div class="slider-content">
-                                <h1>Warwickshire CCVI</h1>
-                                <p>Some random shit goes here</p>
+                                
                             </div>
                         </div><!-- end of /. col -->
                     </div><!-- end of /. row -->
@@ -24,9 +23,9 @@ Home
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="time-content">
-                                            <p><span>Next Match</span> (Sunday, 30 April 2017)  </p>
-                                            <p><b>BBS Primary Club Heindrich Swanepoel Memorial Cup:</b> Warwickshire vs Samoset</p>
-                                            <p><i class="fa fa-map-marker"></i> Bath Cricket Club, N Parade Rd, Bath BA2 4EX</p>
+                                            <p><spam>Next Match</spam> ({{ Carbon\Carbon::parse($fixture->start_date_and_time)->toDayDateTimeString() }})</p>
+                                            <p><b>{{ $fixture->matchType->display_name }}:</b><br>{{ $fixture->home_team_model->name }} vs {{ $fixture->away_team_model->name }}</p>
+                                            <p><i class="fa fa-map-marker"></i> {{ $fixture->venue_model->club_name }}, {{ $fixture->venue_model->address_1 }}, {{ $fixture->venue_model->city_town }} {{ $fixture->venue_model->post_code }}</p>
                                         </div>
                                     </div>
                                     <div class="col-md-7">
@@ -63,7 +62,7 @@ Home
             
             <script>
             // Set the date we're counting down to
-            var countDownDate = new Date("Apr 30, 2017 13:00:00").getTime();
+            var countDownDate = new Date("{{ $next_match }}").getTime();
             
             // Update the count down every 1 second
             var x = setInterval(function() {
@@ -85,6 +84,7 @@ Home
               document.getElementById("countdownHours").innerHTML = hours;
               document.getElementById("countdownMinutes").innerHTML = minutes;
               document.getElementById("countdownSeconds").innerHTML = seconds;
+              document.title = "Home | " + days + "d:" + hours + "h:" + minutes + "m:" + seconds + "s | WCCVI";
               
               
               // If the count down is finished, write some text 
