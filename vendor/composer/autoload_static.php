@@ -10,8 +10,8 @@ class ComposerStaticInit1d9d3cd68b76cd31ccf4ff518c1d0c95
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '1d1b89d124cc9cb8219922c9d5569199' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest.php',
-        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
@@ -258,6 +258,13 @@ class ComposerStaticInit1d9d3cd68b76cd31ccf4ff518c1d0c95
                 0 => __DIR__ . '/..' . '/erusev/parsedown',
             ),
         ),
+        'O' => 
+        array (
+            'Orangehill\\Iseed' => 
+            array (
+                0 => __DIR__ . '/..' . '/orangehill/iseed/src',
+            ),
+        ),
         'M' => 
         array (
             'Mockery' => 
@@ -286,6 +293,7 @@ class ComposerStaticInit1d9d3cd68b76cd31ccf4ff518c1d0c95
     );
 
     public static $classMap = array (
+        'AdminsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/AdminsTableSeeder.php',
         'CreateAdminsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_20_172015_create_admins_table.php',
         'CreateMatchTypesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_23_000132_create_match_types_table.php',
         'CreateMatchesTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_23_002315_create_matches_table.php',
@@ -367,6 +375,10 @@ class ComposerStaticInit1d9d3cd68b76cd31ccf4ff518c1d0c95
         'Hamcrest\\Type\\IsString' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php',
         'Hamcrest\\Util' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
         'Hamcrest\\Xml\\HasXPath' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
+        'MatchTypesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/MatchTypesTableSeeder.php',
+        'MatchesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/MatchesTableSeeder.php',
+        'MigrationsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/MigrationsTableSeeder.php',
+        'Orangehill\\Iseed\\TableNotFoundException' => __DIR__ . '/..' . '/orangehill/iseed/src/Orangehill/Iseed/Exceptions.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/Assert.php',
         'PHPUnit\\Framework\\BaseTestListener' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/BaseTestListener.php',
         'PHPUnit\\Framework\\TestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',
@@ -746,6 +758,9 @@ class ComposerStaticInit1d9d3cd68b76cd31ccf4ff518c1d0c95
         'PHP_Token_XOR_EQUAL' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_YIELD' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_YIELD_FROM' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
+        'PasswordResetsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/PasswordResetsTableSeeder.php',
+        'ProfilesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ProfilesTableSeeder.php',
+        'SeasonsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/SeasonsTableSeeder.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',
@@ -825,7 +840,10 @@ class ComposerStaticInit1d9d3cd68b76cd31ccf4ff518c1d0c95
         'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => __DIR__ . '/..' . '/sebastian/recursion-context/src/InvalidArgumentException.php',
         'SebastianBergmann\\ResourceOperations\\ResourceOperations' => __DIR__ . '/..' . '/sebastian/resource-operations/src/ResourceOperations.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'TeamsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/TeamsTableSeeder.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+        'UsersTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UsersTableSeeder.php',
+        'VenuesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/VenuesTableSeeder.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

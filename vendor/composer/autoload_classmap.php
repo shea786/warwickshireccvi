@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AdminsTableSeeder' => $baseDir . '/database/seeds/AdminsTableSeeder.php',
     'CreateAdminsTable' => $baseDir . '/database/migrations/2017_04_20_172015_create_admins_table.php',
     'CreateMatchTypesTable' => $baseDir . '/database/migrations/2017_04_23_000132_create_match_types_table.php',
     'CreateMatchesTable' => $baseDir . '/database/migrations/2017_04_23_002315_create_matches_table.php',
@@ -87,6 +88,10 @@ return array(
     'Hamcrest\\Type\\IsString' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Type/IsString.php',
     'Hamcrest\\Util' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Util.php',
     'Hamcrest\\Xml\\HasXPath' => $vendorDir . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Xml/HasXPath.php',
+    'MatchTypesTableSeeder' => $baseDir . '/database/seeds/MatchTypesTableSeeder.php',
+    'MatchesTableSeeder' => $baseDir . '/database/seeds/MatchesTableSeeder.php',
+    'MigrationsTableSeeder' => $baseDir . '/database/seeds/MigrationsTableSeeder.php',
+    'Orangehill\\Iseed\\TableNotFoundException' => $vendorDir . '/orangehill/iseed/src/Orangehill/Iseed/Exceptions.php',
     'PHPUnit\\Framework\\Assert' => $vendorDir . '/phpunit/phpunit/src/ForwardCompatibility/Assert.php',
     'PHPUnit\\Framework\\BaseTestListener' => $vendorDir . '/phpunit/phpunit/src/ForwardCompatibility/BaseTestListener.php',
     'PHPUnit\\Framework\\TestCase' => $vendorDir . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',
@@ -466,6 +471,9 @@ return array(
     'PHP_Token_XOR_EQUAL' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD_FROM' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
+    'PasswordResetsTableSeeder' => $baseDir . '/database/seeds/PasswordResetsTableSeeder.php',
+    'ProfilesTableSeeder' => $baseDir . '/database/seeds/ProfilesTableSeeder.php',
+    'SeasonsTableSeeder' => $baseDir . '/database/seeds/SeasonsTableSeeder.php',
     'SebastianBergmann\\CodeCoverage\\CodeCoverage' => $vendorDir . '/phpunit/php-code-coverage/src/CodeCoverage.php',
     'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => $vendorDir . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
     'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => $vendorDir . '/phpunit/php-code-coverage/src/Driver/Driver.php',
@@ -545,5 +553,8 @@ return array(
     'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => $vendorDir . '/sebastian/recursion-context/src/InvalidArgumentException.php',
     'SebastianBergmann\\ResourceOperations\\ResourceOperations' => $vendorDir . '/sebastian/resource-operations/src/ResourceOperations.php',
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
+    'TeamsTableSeeder' => $baseDir . '/database/seeds/TeamsTableSeeder.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
+    'UsersTableSeeder' => $baseDir . '/database/seeds/UsersTableSeeder.php',
+    'VenuesTableSeeder' => $baseDir . '/database/seeds/VenuesTableSeeder.php',
 );

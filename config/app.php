@@ -180,6 +180,7 @@ return [
         //CUSTOM PROVIDERS
         Hootlex\Moderation\ModerationServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Orangehill\Iseed\IseedServiceProvider::class,
     ],
 
     /*
