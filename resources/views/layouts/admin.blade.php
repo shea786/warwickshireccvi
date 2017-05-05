@@ -17,6 +17,7 @@
                     <li><a href="{{ route('admin.match.index') }}">Matches</a></li>
                     <li><a href="{{ route('admin.teams.index') }}">Teams</a></li>
                     <li><a href="{{ route('admin.venue.index') }}">Venue</a></li>
+                    <li><a href="{{ route('admin.results.index') }}">Results</a></li>
                     
                     <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form>

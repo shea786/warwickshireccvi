@@ -140,7 +140,7 @@ class VenuesTableSeeder extends Seeder
             8 => 
             array (
                 'id' => 9,
-                'club_name' => 'Batch Cricket Club',
+                'club_name' => 'Bath Cricket Club',
                 'thumbnail' => '/tmp/php6FyqIS',
                 'address_1' => 'North Parade Bridge Road',
                 'address_2' => 'Line 2',

@@ -4,20 +4,7 @@
                                 <li><a href="{{ route('default.index') }}">Home</a>
                                 <li><a href="#">About</a></li>
                                 <li><a href="{{ route('fixtures.index') }}">Fixtures</a></li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop <b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="shop.html">Shop</a></li>
-                                        <li><a href="shop-single.html">Shop Single</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <b class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog-single.html">Blog Single</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="{{ route('results.index') }}">Results</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                                 
                                 @if (Auth::check())

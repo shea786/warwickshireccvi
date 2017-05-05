@@ -44,6 +44,12 @@ Route::prefix('fixtures')->group(function (){
     Route::get('/','fixturesController@index')->name('fixtures.index');
 });
 
+//Results Routes
+Route::prefix('results')->group(function (){
+    //Main Results Route
+    Route::get('/','resultsController@index')->name('results.index');
+});
+
 //Admin Routes
 Route::prefix('admin')->group(function (){
     Route::get('/login','Auth\adminLoginController@showloginForm')->name('admin.login');
@@ -70,12 +76,17 @@ Route::prefix('admin')->group(function (){
         Route::get('/','Admin\adminVenueController@index')->name('admin.venue.index');
     });
     
-    //Venue routes
+    //Match Type routes
     Route::prefix('match-type')->group(function(){
         Route::get('/create','Admin\adminMatchTypeController@create')->name('admin.matchType.create');
         Route::post('/create','Admin\adminMatchTypeController@store')->name('admin.matchType.store');
         Route::get('/','Admin\adminMatchTypeController@index')->name('admin.matchType.index');
         Route::get('/{matchTypeID}','Admin\adminMatchTypeController@single')->name('admin.matchType.single');
+    });
+    
+    //Results routes
+    Route::prefix('results')->group(function(){
+        Route::get('/','Admin\adminResultsController@index')->name('admin.results.index');
     });
     
     Route::get('/','Admin\adminHomeController@index')->name('admin.home.index');
