@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Match;
 use App\Team;
 use App\Venue;
+use App\MatchType;
 
 class adminMatchController extends Controller
 {
@@ -19,7 +20,8 @@ class adminMatchController extends Controller
     public function create(){
         $teams = Team::pluck('name', 'id');
         $venues = Venue::pluck('club_name', 'id');
-        return view('admin.match.create')->withTeams($teams)->withVenues($venues);
+        $matchtypes = MatchType::pluck('display_name', 'id');
+        return view('admin.match.create')->withTeams($teams)->withVenues($venues)->withMatchtypes($matchtypes);
     }
     
     public function store(Request $request){
@@ -27,7 +29,7 @@ class adminMatchController extends Controller
         
         //store into database
         $match = new Match;
-        $match->match_type = 1;
+        $match->match_type = $request->matchType;;
         $match->season_id = 1;
         $match->home_team = $request->hometeam;
         $match->away_team = $request->awayteam;

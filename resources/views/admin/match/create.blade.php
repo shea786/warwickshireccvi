@@ -5,7 +5,7 @@
         <div class="col-md-12">
             {!! Form::open(['route' => 'admin.match.store']) !!}
                 {!! Form::label('matchType','Match Type:') !!}
-                {!! Form::text('matchType',null,['class' => 'form-control']) !!}
+                {!! Form::select('matchType', $matchtypes, null, ['class' => 'form-control']) !!}
                 
                 {!! Form::label('hometeam','Home Team:') !!}
                 {!! Form::select('hometeam', $teams, null, ['class' => 'form-control']) !!}
