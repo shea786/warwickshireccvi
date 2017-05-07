@@ -10,7 +10,7 @@ use Carbon\Carbon;
 class homeController extends Controller
 {
     public function index(){
-        $fixture = Match::where('start_date_and_time', '>=', Carbon::now())->first();
+        $fixture = Match::where('start_date_and_time', '>=', Carbon::now())->orderBy('start_date_and_time','asc')->first();
         $next_match = Carbon::parse($fixture->start_date_and_time)->format('M d, Y H:i:s');
         return view('main.home.index')->withFixture($fixture)->withNext_match($next_match);
     }
