@@ -27,6 +27,8 @@ Route::get('contact.html',[
     'uses' => 'contactController@index'
 ]);
 
+Route::get('/cricket/index','cricketController@index')->name('cricket.index');
+
 //Profile Routes
 Route::prefix('profile')->group(function (){
     //Create Profile Section
@@ -46,7 +48,6 @@ Route::prefix('fixtures')->group(function (){
 
 //Results Routes
 Route::prefix('results')->group(function (){
-    //Main Results Route
     Route::get('/','resultsController@index')->name('results.index');
 });
 
@@ -86,6 +87,8 @@ Route::prefix('admin')->group(function (){
     
     //Results routes
     Route::prefix('results')->group(function(){
+        Route::get('/scorecard/{match_id}','Admin\adminResultsController@scorecard')->name('admin.results.scorecard');
+        Route::post('/','Admin\adminResultsController@add')->name('admin.results.add');
         Route::get('/','Admin\adminResultsController@index')->name('admin.results.index');
     });
     

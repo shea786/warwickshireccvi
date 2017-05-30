@@ -25,4 +25,9 @@ class Match extends Model
     {
         return $this->belongsTo('App\MatchType','match_type','id');
     }
+    
+    public function scorecardModel()
+    {
+        return $this->belongsTo('App\Scorecard','id','match_id');
+    }
 }

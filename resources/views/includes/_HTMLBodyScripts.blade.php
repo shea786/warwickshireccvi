@@ -26,6 +26,7 @@
         <script src="/js/v.carousel.js"></script>  
         <!-- custom -->
         <script src="/js/custom.js"></script>
+        <script src="/scripts/cricket/core.js"></script>
         <!-- facebook like js -->
         <script>
             (function(d, s, id) {
